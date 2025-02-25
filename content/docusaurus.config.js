@@ -74,6 +74,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      metadata: [
+        { name: 'robots', content: 'noindex, nofollow' }
+      ],
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'کوشک کنکورهنر',
