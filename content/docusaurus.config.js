@@ -10,20 +10,20 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'کوشک کنکورهنر',
+  tagline: 'عمارتی برای یادگیری هنر',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://kushk.surge.sh',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // organizationName: 'facebook', // Usually your GitHub org/user name.
+  // projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -32,8 +32,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fa',
+    locales: ['fa'],
   },
 
   presets: [
@@ -76,9 +76,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'کوشک کنکورهنر',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'kushk konkur art logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -86,12 +86,12 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'دانش نامه',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'بلاگ', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            label: 'گیت‌هاب',
             position: 'right',
           },
         ],
@@ -103,43 +103,43 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'دانش‌ نامه',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'ارتباطات',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'اینستاگران',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Discord',
+                label: 'تلگرام',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
-                label: 'X',
+                label: 'پینترست',
                 href: 'https://x.com/docusaurus',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'بیشتر',
             items: [
               {
-                label: 'Blog',
+                label: 'بلاگ',
                 to: '/blog',
               },
               {
-                label: 'GitHub',
+                label: 'گیت‌هاب',
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Kushk Konkur Art, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
