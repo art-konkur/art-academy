@@ -5,7 +5,8 @@ module.exports = {
   title: config.title,
   url: config.url,
   baseUrl: config.baseUrl,
-  
+  i18n: config.i18n,
+
   presets: [
     [
       '@docusaurus/preset-classic',
