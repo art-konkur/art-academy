@@ -6,25 +6,198 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #4969e1;
+  --ifm-color-primary-dark: #2f54dd;
+  --ifm-color-primary-darker: #244ad9;
+  --ifm-color-primary-darkest: #1e3db3;
+  --ifm-color-primary-light: #637ee5;
+  --ifm-color-primary-lighter: #6f89e7;
+  --ifm-color-primary-lightest: #96a8ee;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #ffab40;
+  --ifm-color-primary-dark: #ff9d20;
+  --ifm-color-primary-darker: #ff9610;
+  --ifm-color-primary-darkest: #df7d00;
+  --ifm-color-primary-light: #ffb960;
+  --ifm-color-primary-lighter: #ffc070;
+  --ifm-color-primary-lightest: #ffd5a0;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+/* ... existing code ... */
+
+/* استایل دکمه سفارشی */
+.custom-button {
+  background-color: #ffab40;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #DF7D00;
+  box-shadow: 0px 6px #DF7D00;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #FFC070;
+  transform: translateY(-2px);
+  box-shadow: 0 3px #FF9610;
+}
+
+/* اگر می‌خواهید انواع مختلف دکمه داشته باشید */
+.button.button--secondary {
+  background-color: #FF9D20;
+  color: #2D3748;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #3D00E8;
+  box-shadow: 0px 6px #3D00E8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-button--outline {
+  background-color: transparent;
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.custom-button--outline:hover {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+/* استایل دکمه سفارشی */
+.custom-button {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: var(--ifm-color-primary-darker);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* اگر می‌خواهید انواع مختلف دکمه داشته باشید */
+.custom-button--secondary {
+  background-color: var(--ifm-color-secondary);
+}
+
+.custom-button--outline {
+  background-color: transparent;
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.custom-button--outline:hover {
+  background-color: var(--ifm-color-primary);
+  color: white;
+} 
+
+[dir='rtl'] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* src/css/custom.css */
+
+/* 1. فونت‌ها -------------------------------------------------*/
+/* Kufam - وزن‌های مورد نیاز */
+@font-face {
+  font-family: 'Kufam';
+  src: url('/fonts/Kufam-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kufam';
+  src: url('/fonts/Kufam-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* VazirMatn - وزن‌های مورد نیاز */
+@font-face {
+  font-family: 'VazirMatn';
+  src: url('/fonts/VazirMatn-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'VazirMatn';
+  src: url('/fonts/VazirMatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'VazirMatn';
+  src: url('/fonts/VazirMatn-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+/* 2. تنظیمات پایه -------------------------------------------------*/
+:root {
+  /* فونت خانواده */
+  --ifm-font-family-base: 'VazirMatn', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Kufam', var(--ifm-font-family-base);
+
+  /* جهت نوشتار */
+  direction: rtl;
+  text-align: right;
+}
+
+/* 3. تایپوگرافی -------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 900; /* استفاده از Kufam Black */
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 2rem 0 1.5rem;
+}
+
+p, li {
+  font-family: var(--ifm-font-family-base);
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+/* 4. نسخه موبایل -------------------------------------------------*/
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+}
+
+/* 5. تنظیمات خاص RTL -------------------------------------------------*/
+html[dir='rtl'] {
+  /* اصلاح جهت لیست‌ها */
+  ul, ol {
+    padding-right: 1.5rem;
+    padding-left: 0;
+  }
+
+  /* اصلاح جهت جداول */
+  table {
+    direction: rtl;
+  }
 }

@@ -8,7 +8,7 @@ module.exports = {
         path: 'docs',
         routeBasePath: 'docs',
       },
-    ]
-    // مقدار null حذف شد
-  ]
+    ],
+    '@docusaurus/plugin-algolia',
+  ],
 };

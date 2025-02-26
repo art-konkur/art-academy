@@ -1,0 +1,13 @@
+/* Theme Toggle Button Styles */
+.colorModeToggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  display: block !important;
+  margin: 0;
+}
+
+@media (max-width: 996px) {
+  .colorModeToggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+    padding: 0.8rem;
+    position: relative;
+    order: 3;
+  }
+} 
