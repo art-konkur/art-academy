@@ -201,3 +201,21 @@ html[dir='rtl'] {
     direction: rtl;
   }
 }
+/* Theme Toggle Button Styles */
+.navbar__items--right > .toggle_node_modules-\@docusaurus-theme-classic-lib-theme-Toggle-styles-module {
+  display: block !important;
+}
+
+@media screen and (max-width: 996px) {
+  .navbar-sidebar__items .toggle_node_modules-\@docusaurus-theme-classic-lib-theme-Toggle-styles-module {
+    display: flex !important;
+    justify-content: center;
+    margin: 1rem;
+  }
+  
+  .navbar-sidebar__items .clean-btn {
+    padding: 0.8rem;
+    border-radius: 50%;
+    background: var(--ifm-color-emphasis-200);
+  }
+} 

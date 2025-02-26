@@ -4,5 +4,16 @@ const footer = require('./themeConfig/footer');
 
 module.exports = {
   navbar,
-  footer
+  footer,
+
+  colorMode: {
+    defaultMode: 'light',
+    disableSwitch: false,
+    respectPrefersColorScheme: true,
+  },
+  
+  navbar: {
+    hideOnScroll: false,
+  },
 };
+

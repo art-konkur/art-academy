@@ -4,11 +4,12 @@ test('اگر توییتر وجود نداشت، مقدار پیش‌فرض دا�
   jest.mock('../config/metaData', () => ({
     title: "کوشک کنکورهنر",
     tagline: "عمارتی برای یادگیری هنر",
-    url: "https://kushk.surge.sh/",
     favicon: "/img/favicon.ico",
-    social: {} // توییتر وجود ندارد
+    url: "http://kushk.surge.sh",
+    baseUrl: '/',
+    social: {'x': '@koushkehonar'} // توییتر وجود ندارد
   }));
 
   const mockedData = require('../config/metaData');
-  expect(mockedData.social.twitter).toBeUndefined();
+  expect(mockedData.social['@koushkehonar']).toBeUndefined();
 });
