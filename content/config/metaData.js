@@ -4,7 +4,7 @@ module.exports = {
     tagline: 'عمارتی برای یادگیری هنر',
     favicon: 'img/favicon.ico',
     url: 'https://kushk.surge.sh',
-    baseUrl: '/',
+    baseUrl: '/content/build/index.html/',
     social: {
         twitter: '@koushkehonar',
         instagram: 'koushkehonar',

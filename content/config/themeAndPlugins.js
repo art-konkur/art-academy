@@ -9,6 +9,5 @@ module.exports = {
         routeBasePath: 'docs',
       },
     ],
-    '@docusaurus/plugin-algolia',
   ],
 };
